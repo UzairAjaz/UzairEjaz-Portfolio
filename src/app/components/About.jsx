@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import AboutImage from "../../../public/hero.jpeg";
+import AboutImage from "../../../public/About.jpeg";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -51,7 +51,7 @@ export default function About() {
                 <Image
                   src={AboutImage}
                   alt="Coding workspace"
-                  className="object-cover w-full h-full"
+                  className="object-cover object-[center_top] w-full h-full"
                 />
               </div>
               <div>
