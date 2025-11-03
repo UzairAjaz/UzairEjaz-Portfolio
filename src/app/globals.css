@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --white: #ffffff;
+  --navyblue: #020617;
+  --semigray: #334155;
+  --lightgray: #e2e8f0;
+  --capsule-bg: #323e58;
+  --capsule-border: #456eae;
+  --skill-bg: #172239;
+  --text-gray: #888484;
+  --font-heading: "Poppins", "sans-serif";
+  --font-body: "Inter", "sans-serif";
+}
+
+.bg-navyblue {
+  background-color: var(--navyblue);
+}
+.text-navyblue {
+  color: var(--navyblue);
+}
+.bg-semigray {
+  background-color: var(--semigray);
+}
+.text-semigray {
+  color: var(--semigray);
+}
+.bg-lightgray {
+  background-color: var(--lightgray);
+}
+.text-lightgray {
+  color: var(--lightgray);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.text-white {
+  color: var(--white);
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
