@@ -80,30 +80,17 @@ export default function Skills() {
                 <h2 className="text-2xl">Frontend Development</h2>
               </div>
               <div className="grid grid-cols-2 gap-3 mt-12">
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  React.js
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Next.js
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  TypeScript
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  JavaScript
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  HTML5
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  CSS3
-                </div>
+                {["React.js", "Next.js", "TypeScript", "HTML5", "CSS3"].map(
+                  (cap, i) => (
+                    <div
+                      key={i}
+                      className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2"
+                    >
+                      <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
+                      {cap}
+                    </div>
+                  )
+                )}
               </div>
             </motion.div>
             <motion.div
@@ -136,26 +123,21 @@ export default function Skills() {
                 <h2 className="text-2xl">Styling & Design</h2>
               </div>
               <div className="grid grid-cols-2 gap-3 mt-12">
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Tailwind CSS
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  CSS Modules
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Styled Components
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Resposive Design
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Framer Motion
-                </div>
+                {[
+                  "Tailwind CSS",
+                  "CSS Modules",
+                  "Styled Components",
+                  "Resposive Design",
+                  "Framer Motion",
+                ].map((cap, i) => (
+                  <div
+                    key={i}
+                    className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2"
+                  >
+                    <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
+                    {cap}
+                  </div>
+                ))}
               </div>
             </motion.div>
             <motion.div
@@ -185,26 +167,17 @@ export default function Skills() {
                 <h2 className="text-2xl">Tools & Workflow</h2>
               </div>
               <div className="grid grid-cols-2 gap-3 mt-12">
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Git & GitHub
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  VS Code
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  npm
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Webpack
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Vite
-                </div>
+                {["Git & GitHub", "VS Code", "npm", "Webpack", "Vite"].map(
+                  (cap, i) => (
+                    <div
+                      key={i}
+                      className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2"
+                    >
+                      <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
+                      {cap}
+                    </div>
+                  )
+                )}
               </div>
             </motion.div>
             <motion.div
@@ -235,26 +208,17 @@ export default function Skills() {
                 <h2 className="text-2xl">Other Technologies</h2>
               </div>
               <div className="grid grid-cols-2 gap-3 mt-12">
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Shadcn UI
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Redux
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  React Router
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Jest
-                </div>
-                <div className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2">
-                  <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
-                  Figma
-                </div>
+                {["Shadcn UI", "Redux", "React Router", "Jest", "Figma"].map(
+                  (cap, i) => (
+                    <div
+                      key={i}
+                      className="p-2 pl-4 rounded-xl bg-(--capsule-bg) border border-(--capsule-border) text-(--lightgray) flex items-center gap-2"
+                    >
+                      <span className="w-2 h-2 bg-sky-400 rounded-full"></span>
+                      {cap}
+                    </div>
+                  )
+                )}
               </div>
             </motion.div>
           </motion.div>

@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "image": "/projects/todoist.png",
+    "task": "Task Management",
+    "taskdesc": "A task management app with authentication and email verification, allowing users to securely add, edit, and track their to-dos.",
+    "tags": [
+      "React.js",
+      "clerk",
+      "Tailwind CSS"
+    ],
+    "github": "https://github.com/UzairAjaz/Todoist",
+    "vercel": "https://todoist-opal.vercel.app/"
+  },
+  {
+    "id": 2,
+    "image": "/projects/parkeasy.png",
+    "task": "Park Easy",
+    "taskdesc": "A smart parking app that helps users find, book, and manage parking spots easily with real-time availability updates.",
+    "tags": [
+      "React.js",
+      "AWS Amplify",
+      "Tailwind CSS",
+      "Shadcn"
+    ],
+    "github": "https://github.com/UzairAjaz/Park.Easy",
+    "vercel": "https://park-easy-drab.vercel.app/login"
+  },
+  {
+    "id": 3,
+    "image": "/projects/meal_mate_img.png",
+    "task": "Meal Mate",
+    "taskdesc": "A simple recipe app that lets users explore and view meal recipes with ingredients and step-by-step cooking instructions.",
+    "tags": [
+      "React.js",
+      "Tailwind CSS"
+    ],
+    "github": "https://github.com/UzairAjaz/Meal_Mate",
+    "vercel": "https://meal-mate-9lk3.vercel.app/"
+  },
+  {
+    "id": 4,
+    "image": "/projects/tic_tac_toe.png",
+    "task": "Tic Tac Toe",
+    "taskdesc": "A classic 3×3 grid game where two players compete to align three marks in a row using Xs and Os.",
+    "tags": [
+      "React.js",
+      "vite",
+      "CSS3"
+    ],
+    "github": "https://github.com/UzairAjaz/Tic-Tac-Toe",
+    "vercel": "https://tic-tac-toe-six-ecru-49.vercel.app/"
+  },
+  {
+    "id": 5,
+    "image": "/projects/password_generator.jpg",
+    "task": "Password Generator",
+    "taskdesc": "A simple tool that generates strong, random passwords based on user-selected length and character options for better security.",
+    "tags": [
+      "HTML5",
+      "javascript",
+      "CSS3"
+    ],
+    "github": "https://github.com/UzairAjaz/Password-Generator",
+    "vercel": "https://password-generator-dusky-delta.vercel.app/"
+  }
+]
