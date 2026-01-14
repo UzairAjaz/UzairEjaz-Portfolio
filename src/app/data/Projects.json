@@ -14,16 +14,15 @@
   },
   {
     "id": 2,
-    "image": "/projects/parkeasy.png",
-    "task": "Park Easy",
+    "image": "/projects/parkejasy.png",
+    "task": "Ubexis",
     "taskdesc": "A smart parking app that helps users find, book, and manage parking spots easily with real-time availability updates.",
     "tags": [
-      "React.js",
-      "AWS Amplify",
-      "Tailwind CSS",
-      "Shadcn"
+      "HTML5",
+      "CSS3",
+      "javascript"
     ],
-    "github": "https://github.com/UzairAjaz/Park.Easy",
+    "github": "https://github.com/UzairAjaz/Ubexis.com",
     "vercel": "https://park-easy-drab.vercel.app/login"
   },
   {

@@ -2,7 +2,11 @@ import "./globals.css";
 import { Inter, Poppins } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"], variable: "--font-heading" });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-heading",
+});
 
 export const metadata = {
   title: "Uzair Ejaz | React & Next.js Developer",
@@ -29,7 +33,7 @@ export const metadata = {
     siteName: "Uzair Ejaz Portfolio",
     images: [
       {
-        url: "/og-image.jpg", // place your preview image in /public/
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Uzair Ejaz Portfolio Preview",
@@ -43,11 +47,13 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={`${inter.variable} ${poppins.variable} min-w-[100vw] `}>
+      {/* Apply horizontal padding to entire portfolio */}
+      <body className="overflow-x-hidden">
+        {children}
+      </body>
     </html>
   );
 }
